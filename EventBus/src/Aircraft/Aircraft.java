@@ -35,6 +35,10 @@ public class Aircraft {
     public AircraftName getName(){
         return name;
     }
+    public void SetPosition(Place n){
+        this.currentPlace = n;
+    }
+
     private void writeEventLog(){}
 
 
