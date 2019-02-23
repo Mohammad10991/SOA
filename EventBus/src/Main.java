@@ -1,6 +1,5 @@
 import Aircraft.Aircraft;
 import Aircraft.AircraftName;
-import Airport.Airport;
 import Airport.Place;
 import Events.RunwayClearedForTakeOff;
 import Events.RunwayClearedToLand;
@@ -79,92 +78,96 @@ public class Main {
         //f1 start
         //f11 land
         RunwayClearedToLand.runwayClearedToLand(F11, runwayLand_1);
-        HoldShort.holdShort(F11, );
-        Taxi.taxi();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        RunwayClearedForTakeOff.runwayClearedForTakeOff();
+        HoldShort.holdShort(F11, Place.S1);
+        Taxi.taxi(F01, runwayStart_1, Place.O5);
+        HoldShort.holdShort(F01, Place.S4);
+        Taxi.taxi(F11, Place.A01, Place.O1);
+        RunwayClearedForTakeOff.runwayClearedForTakeOff(F01, runwayStart_1);
 
         //f2 start
         //f12 land
-        RunwayClearedToLand.runwayClearedToLand();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        RunwayClearedForTakeOff.runwayClearedForTakeOff();
+        RunwayClearedToLand.runwayClearedToLand(F12, runwayLand_1);
+        HoldShort.holdShort(F12, Place.S1);
+        Taxi.taxi(F02, runwayStart_1, Place.O5);
+        HoldShort.holdShort(F02, Place.S4);
+        Taxi.taxi(F12, Place.A02, Place.O2);
+        RunwayClearedForTakeOff.runwayClearedForTakeOff(F02, runwayStart_1);
 
         //f3 start
         //f13 land
-        RunwayClearedToLand.runwayClearedToLand();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        RunwayClearedForTakeOff.runwayClearedForTakeOff();
+        RunwayClearedToLand.runwayClearedToLand(F13, runwayLand_1);
+        HoldShort.holdShort(F13, Place.S1);
+        Taxi.taxi(F03, runwayStart_1, Place.O5);
+        HoldShort.holdShort(F03, Place.S4);
+        Taxi.taxi(F13, Place.A03, Place.O3);
+        RunwayClearedForTakeOff.runwayClearedForTakeOff(F03, runwayStart_1);
 
         //f4 start
         //f14 land
-        RunwayClearedToLand.runwayClearedToLand();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        RunwayClearedForTakeOff.runwayClearedForTakeOff();
+        RunwayClearedToLand.runwayClearedToLand(F14, runwayLand_1);
+        HoldShort.holdShort(F14, Place.S1);
+        Taxi.taxi(F04, runwayStart_1, Place.O5);
+        HoldShort.holdShort(F04, Place.S4);
+        Taxi.taxi(F14, Place.A04, Place.O4);
+        RunwayClearedForTakeOff.runwayClearedForTakeOff(F04, runwayStart_1);
 
         //f5 start
         //f15 land
-        RunwayClearedToLand.runwayClearedToLand();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        RunwayClearedForTakeOff.runwayClearedForTakeOff();
+        RunwayClearedToLand.runwayClearedToLand(F15, runwayLand_1);
+        HoldShort.holdShort(F15, Place.S1);
+        Taxi.taxi(F05, runwayStart_1, Place.O5);
+        HoldShort.holdShort(F05, Place.S4);
+        Taxi.taxi(F15, Place.A05, Place.O5);
+        RunwayClearedForTakeOff.runwayClearedForTakeOff(F05, runwayStart_1);
 
         //f6 start
         //f16 land
-        RunwayClearedToLand.runwayClearedToLand();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        RunwayClearedForTakeOff.runwayClearedForTakeOff();
+        RunwayClearedToLand.runwayClearedToLand(F16, runwayLand_2);
+        HoldShort.holdShort(F16, Place.S2);
+        Taxi.taxi(F06, runwayStart_2, Place.L5);
+        HoldShort.holdShort(F06, Place.S3);
+        Taxi.taxi(F16, Place.B01, Place.L1);
+        RunwayClearedForTakeOff.runwayClearedForTakeOff(F06, runwayStart_2);
 
         //f7 start
         //f17 land
-        RunwayClearedToLand.runwayClearedToLand();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        RunwayClearedForTakeOff.runwayClearedForTakeOff();
+        RunwayClearedToLand.runwayClearedToLand(F17, runwayLand_2);
+        HoldShort.holdShort(F17, Place.S2);
+        Taxi.taxi(F07, runwayStart_2, Place.L5);
+        HoldShort.holdShort(F07, Place.S3);
+        Taxi.taxi(F17, Place.B02, Place.L2);
+        RunwayClearedForTakeOff.runwayClearedForTakeOff(F07, runwayStart_2);
+
 
         //f8 start
         //f18 land
-        RunwayClearedToLand.runwayClearedToLand();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        RunwayClearedForTakeOff.runwayClearedForTakeOff();
+        RunwayClearedToLand.runwayClearedToLand(F18, runwayLand_2);
+        HoldShort.holdShort(F18, Place.S2);
+        Taxi.taxi(F08, runwayStart_2, Place.L5);
+        HoldShort.holdShort(F08, Place.S3);
+        Taxi.taxi(F18, Place.B03, Place.L3);
+        RunwayClearedForTakeOff.runwayClearedForTakeOff(F08, runwayStart_2);
+
 
         //f9 start
         //f19 land
-        RunwayClearedToLand.runwayClearedToLand();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        RunwayClearedForTakeOff.runwayClearedForTakeOff();
+        RunwayClearedToLand.runwayClearedToLand(F19, runwayLand_2);
+        HoldShort.holdShort(F19, Place.S2);
+        Taxi.taxi(F09, runwayStart_2, Place.L5);
+        HoldShort.holdShort(F09, Place.S3);
+        Taxi.taxi(F19, Place.B04, Place.L4);
+        RunwayClearedForTakeOff.runwayClearedForTakeOff(F09, runwayStart_2);
+
 
         //f10 start
         //f20 land
-        RunwayClearedToLand.runwayClearedToLand();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        HoldShort.holdShort();
-        Taxi.taxi();
-        RunwayClearedForTakeOff.runwayClearedForTakeOff();
+        RunwayClearedToLand.runwayClearedToLand(F20, runwayLand_2);
+        HoldShort.holdShort(F20, Place.S2);
+        Taxi.taxi(F10, runwayStart_2, Place.L5);
+        HoldShort.holdShort(F10, Place.S3);
+        Taxi.taxi(F20, Place.B05, Place.L5);
+        RunwayClearedForTakeOff.runwayClearedForTakeOff(F10, runwayStart_2);
+
 
 
     }
