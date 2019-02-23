@@ -8,5 +8,7 @@ public class Taxi {
     public static void taxi(Aircraft plane, Place destination, Place waypoint){
         plane.SetPosition(waypoint);
         plane.SetPosition(destination);
+
+        plane.writeEventLog(plane.getId(), "TaxiToDestination");
     }
 }

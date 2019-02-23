@@ -8,5 +8,7 @@ public class HoldShort {
     public static void holdShort(Aircraft plane, Place position){
 
         plane.SetPosition(position);
+
+        plane.writeEventLog(plane.getId(), "HoldShort");
     }
 }

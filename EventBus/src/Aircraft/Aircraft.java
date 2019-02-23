@@ -3,6 +3,10 @@ package Aircraft;
 import Aircraft.Crew.Crew;
 import Airport.Place;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+
 public class Aircraft {
      private int id;
      private  String manufacturer;
@@ -39,7 +43,17 @@ public class Aircraft {
         this.currentPlace = n;
     }
 
-    private void writeEventLog(){}
+    public void writeEventLog(int plane, String event){
+        try {
+            FileWriter writer = new FileWriter("FlightLog.txt", true);
+            String text = "#, " + plane + ", " + (System.currentTimeMillis() / 1000) + ", " + event;
+            writer.write(text);
+            writer.write("\r\n");   // write new line
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 
 }
